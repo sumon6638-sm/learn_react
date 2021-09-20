@@ -30,21 +30,25 @@ function App() {
 
 function Mobile() {
   const [percentage, setPercentage] = useState(0);
+  const [second, setSecond] = useState(1);
 
   const batteryIncrease = () => {
     if (percentage < 100) {
       setPercentage(percentage + 5)
+      setSecond(second*2)
     }
   };
   const batteryDecrease = () => {
     if (percentage > 0) {
       setPercentage(percentage - 10)
+      setSecond(second*10)
     }
   };
 
   return (
     <div className='mobile'>
       <h1>Mobile Battery Percentage: {percentage}</h1>
+      <h3>Charging Time: {second}second</h3>
       <button onClick ={batteryDecrease}>Battery Decrease</button>
       <button onClick={batteryIncrease}>Battery Increase</button>
     </div>

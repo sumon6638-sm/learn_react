@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const products = [
@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Mobile></Mobile>
+      <ExternalUsers></ExternalUsers>
       <Friend name='Sumon' mail='mdsumoncse19@gmail.com'></Friend>
       <Friend name='anik' mail='mdsumoncse19@gmail.com'></Friend>
       <Friend name='rabbul' mail='mdsumoncse19@gmail.com'></Friend>
@@ -46,6 +47,34 @@ function Mobile() {
       <h1>Mobile Battery Percentage: {percentage}</h1>
       <button onClick ={batteryDecrease}>Battery Decrease</button>
       <button onClick={batteryIncrease}>Battery Increase</button>
+    </div>
+  )
+}
+
+function ExternalUsers() {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/todos')
+      .then(res => res.json())
+      .then(data => setUsers(data));
+  }, [])
+
+  return (
+    <div>
+      <h3>External Users: {users.length}</h3>
+
+      {
+        users.map(user => <User id={user.id} title={user.title} userId={user.userId} completed={user.completed}></User>)
+      }
+    </div>
+  )
+}
+
+function User(props) {
+  return (
+    <div className='user'>
+      <h3>{props.id}: {props.title.slice(0,20)}</h3>
+      <h4>Catagory: {props.userId}, isCompleted: {props.completed}</h4>
     </div>
   )
 }

@@ -51,13 +51,13 @@ function Mobile() {
 }
 
 function Friend(props) {
-  const friendStyel = {
+  const friendStyle = {
     backgroundColor: 'lightgreen',
     border: '5px solid yellow',
     borderRadius: '10px'
   }
   return (
-    <div className='friend' style={friendStyel}>
+    <div className='friend' style={friendStyle}>
       <h3>Name: {props.name}</h3>
       <h4>Email: {props.mail}</h4>
     </div>

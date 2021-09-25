@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Need to see again: 48_6
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Module 48
 
-## Available Scripts
+আজকে দেখার মতো React করবে। রিলিজ হচ্ছে মডিউল ৪৮
 
-In the project directory, you can run:
+# module_release #simple_react_milestone #module_48
 
-### `npm start`
+গত কয়েকদিন টুকটাক React করছো। আজকে একটু ভালো করে শিখবে। সিম্পল একটা ওয়েব পেইজ বানানোর মধ্য দিয়ে, কয়েকটা কম্পোনেন্ট। তাদের মধ্যে ডাটার লেনদেন। আর কয়েকটা ইভেন্ট হ্যান্ডেল, এবং কিছু স্টাইল চেইঞ্জ। এইটুক ই। এইটুকু দিয়েই একটা মোটামুটি মানের সাইট বানিয়ে ফেলবে। সিম্পল একটা ই-কমার্স সাইটের মেইন পেইজ তৈরি করে ফেলবে। যেখানে অনেকগুলা প্রোডাক্ট থাকবে। তাদের প্রাইস থাকবে। তুমি চাইলে শপিং কার্টে যোগ করে ফেলতে পারবে। কি মজা। কিছু চমৎকার আইকন যোগ করবে। ভালো মজা হবে আজকে। 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+আজকের মডিউলটা একটু ভালো করে দেখো। এবং বুঝার আগে নিচের তিনটা জিনিস মনে রাখবে। এইটা শুধু React শেখার জন্য না। অন্য যেকোন কিছুর জন্যই কাজে লাগবে। এই HW2 সিস্টেম মাথায় রাখবে। তাহলে তোমার কাজে জিনিস লাক্স সাবানের মতো রিলাক্স রিলাক্স লাগবে। 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+১. How -- যে কোন জিনিসই প্রথমেই শিখতে গেলে সব বুঝে ফেলতে হবে। এমন কোন কথা নাই। এমনকি আমি বলি দরকারও নাই। জাস্ট প্রথম ধাক্কায় খেয়াল করবে কিভাবে কি করা হচ্ছে। তুমি কি সেই স্টেপ ফলো করতে পারতেছো কিনা। যেভাবে করতে বলতেছে সেভাবে সেটা করলে সেটা হচ্ছে কিনা। এই লেভেলে জাস্ট HOW সেই এঙ্গেলে খেয়াল করো।  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+২. What -- যখন HOW ফলো করতে যাবে। তখন তুমি কিছু সিম্পল সিম্পল মিসটেক করে ফেলবে। সেগুলার পিছনে ৩০ মিনিট থেকে এক ঘন্টা সময় যাবে। তখন সেগুলাতে একটু খেয়াল করো। ভুল খুঁজে বের করার চেষ্টা করো। সেটা ফিক্স করো। দরকার হলে হেল্প চাও। থাহলে সেটা আরেকটু খেয়াল করবে। এবং আরেকটু ভালো ফিল করবে। তাতে একটু একটু করে নজরে আসবে জিনিসটা আসলে কি। অর্থাৎ WHAT এই জিনিসটা মাথায় আসবে। এইটুক হলেই আপাতত চলে। 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+৩. Why -- (এইটা অপশনাল) যারা একটু দ্রুত চিন্তা করতে পারে, দ্রুত শিখতে পারে তারা একটু চিন্তা করে দেখতে পারো। আচ্ছা এইভাবে এইটা করতে বলতেছে কেন। আচ্ছা অন্য কোন কিছু চিন্তা করা যায় কিনা। তবে যারা প্রথম প্রথম কোডিং করতেছে তাদের জন্য এই স্টেপ বাদ দিলেও চলবে। কয়েকটা প্রজেক্ট করতে করতে। কয়েক জায়গায় আটকে গিয়ে ধীরে ধীরে এই জিনিসগুলো এমনিতেই খুলতে শুরু করবে।  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+আজকের মডিউল: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+হয়তো তুমি দেখবে ভিডিও ৯ টা। এবং আগের কোর কনসেপ্টগুলোই এখন আবার ইউজ করা হয়েছে। অর্থাৎ আগের মতোই তুমি কম্পোনেন্ট বানিয়েছো। আগের মতোই তুমি স্টেট ডিক্লেয়ার করেছো। আগের মতোই তুমি props হ্যান্ডেল করেছো। অলমোস্ট আগের মতোই তুমি ইভেন্ট হ্যান্ডলার কাজে লাগাইছো। তবে এইবার জাস্ট দেখার মতো কিছু একটা দাঁড়া করানোর চেষ্টা করেছো। আর কিছু না। 
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+তাছাড়া আগামীকাল জাস্ট ৯টা ভিডিও আসবে। এবং এই জিনিসগুলো রিপিট হবে। আরো বাড়তি কিছু কাজ দেয়া হবে। প্লাস আগামীকালের পরের দিন পিউর প্রাকটিস ডে। অর্থাৎ সেদিন কোন ভিডিও রিলিজ হবে না। তাই আজকে হালকা একটু সময় বাড়িয়ে দাও। হালকা একটু কম বুঝলেও বা একটু বাকি থাকলেও সেটা আগামীকাল বা পরশু পুষিয়ে দিতে পারবে। 
+
+ 
+
+.
+
+এইভাবে বিভিন্ন কেইসে React এর কোর কনসেপ্টগুলো ইউজ করতে করতেই ধীরে ধীরে React সম্পর্কে একটা ফাউন্ডেশন তৈরি হতে শুরু করবে। কারো ফাউন্ডেশন এক টানে হয়ে যাবে। আবার কারো করো কয়েকটা লেয়ারে হবে। তুমি তোমার অবস্থা অনুসারে তোমার নিজের জন্য একটা স্টেপ এবং টাইমলাইন সেট করো। দরকার হলে টাইম বাড়িয়ে দাও। প্রতিদিন ৬-৮ ঘন্টার জায়গায় ১০ ঘন্টা দাও। একটু ঘাম ঝরাও। ফিউচারে ঘামের দাম পাবে। 
+
+
+
+React না পারার কিছু নাই। হয় দুই দিন বেশি লাগবে। না হয় দুই দিন কম লাগবে। তবে শুরু যেহেতু করেছো। শেষ অবশ্যই হবে।
+
+
+
+.
+
+
+
+React দিয়ে বানাইতে গেছি ই-কমার্স সাইট এমাজন 
+
+জেফ বেজোস এসে জিজ্ঞেস করে তুই কেডা, তোর কয় কেজি ওজন?
+

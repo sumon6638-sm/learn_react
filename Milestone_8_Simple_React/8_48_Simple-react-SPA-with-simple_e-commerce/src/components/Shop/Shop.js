@@ -10,7 +10,7 @@ const Shop = () => {
 
     useEffect(() => {
         // console.log('Product api called');
-        fetch('./products.JSON')
+        fetch('./products.json')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -27,7 +27,7 @@ const Shop = () => {
         if (exist) {
             const rest = cart.filter(pd => pd.key !== product.key);
             exist.quantity = exist.quantity + 1;
-            newCart = [...rest, product];
+            newCart = [...rest, exist];
         }
 
         else {

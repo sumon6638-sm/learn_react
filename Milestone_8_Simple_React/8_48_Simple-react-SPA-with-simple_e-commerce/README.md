@@ -1,3 +1,5 @@
+# Live site link: https://ema-john-c31d4.web.app/shop
+
 # Need to see again: 48_6 + 49_3 + 49_4**
 
 # Module 48

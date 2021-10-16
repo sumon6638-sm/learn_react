@@ -1,0 +1,338 @@
+const student1 = { name: "rafique", marks: 79, result: "A+" };
+
+console.log(student1.mark + 1);
+
+const billionaire = [
+    {
+        name: 'Jeff Bezos',
+        net_worth:  177,
+        rank: 1,
+        age: 57,
+        country: "United States",
+        source: 'Amazon',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5bb22ae84bbe6f67d2e82e05%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D627%26cropX2%3D1639%26cropY1%3D129%26cropY2%3D1142'
+    },
+
+    {
+        name: 'Elon Musk',
+        net_worth:  151,
+        rank: 2,
+        age: 49,
+        country: "United States",
+        source: 'Tesla, SpaceX',
+        industry: 'Automotive',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f47d4de7637290765bce495%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D1699%26cropX2%3D3845%26cropY1%3D559%26cropY2%3D2704'
+    },
+
+    {
+        name: 'Bernard Arnault & family',
+        net_worth:  150,
+        rank: 3,
+        age: 72,
+        country: "France",
+        source: 'LVMH',
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5dc05518ca425400079c659f%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4000%26cropY1%3D1209%26cropY2%3D5212'
+    },
+
+    {
+        name: 'Bill Gates',
+        net_worth:  124,
+        rank: 4,
+        age: 65,
+        country: "United States",
+        source: 'Microsoft',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987'
+    },
+
+    {
+        name: 'Mark Zuckerberg',
+        net_worth:  97,
+        rank: 5,
+        age: 36,
+        country: "United States",
+        source: 'Facebook',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b7d331358e35dd2773a9%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4401%26cropY1%3D0%26cropY2%3D4401'
+    },
+
+    {
+        name: 'Warren Buffett',
+        net_worth:  96,
+        rank: 6,
+        age: 90,
+        country: "United States",
+        source: 'Berkshire Hathaway',
+        industry: 'Finance & Investments',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5babb7f1a7ea4342a948b79a%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D748%26cropX2%3D3075%26cropY1%3D1753%26cropY2%3D4082'
+    },
+
+    {
+        name: 'Larry Ellison',
+        net_worth:  93,
+        rank: 7,
+        age: 76,
+        country: "United States",
+        source: 'Software',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e8b62cfc095010007bffea0%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4529%26cropY1%3D652%26cropY2%3D5184'
+    },
+
+    {
+        name: 'Larry Page',
+        net_worth:  92,
+        rank: 8,
+        age: 48,
+        country: "United States",
+        source: 'Google',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76bcaaa7ea43100043c836%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D227%26cropX2%3D2022%26cropY1%3D22%26cropY2%3D1817'
+    },
+
+    {
+        name: 'Sergey Brin',
+        net_worth:  89,
+        rank: 9,
+        age: 47,
+        country: "United States",
+        source: 'Google',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7c254bbe6f78090d831f%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D475%26cropX2%3D2887%26cropY1%3D168%26cropY2%3D2582'
+    },
+
+    {
+        name: 'Mukesh Ambani',
+        net_worth:  85,
+        rank: 10,
+        age: 63,
+        country: "India",
+        source: 'Diversified',
+        industry: 'Diversified',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7829a7ea434b351ba0b6%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D206%26cropX2%3D2043%26cropY1%3D250%26cropY2%3D2089'
+    },
+
+    {
+        name: 'Amancio Ortega',
+        net_worth:  77,
+        rank: 11,
+        age: 85,
+        country: "Spain",
+        source: 'Zara',
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b94131358e35dd27748e%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D179%26cropX2%3D2232%26cropY1%3D216%26cropY2%3D2269'
+    },
+
+    {
+        name: 'Francoise Bettencourt Meyers & family',
+        net_worth:  74,
+        rank: 12,
+        age: 67,
+        country: "France",
+        source: "L'Oreal",
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e26e3c65f7c2596bd3e15%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080'
+    },
+
+    {
+        name: 'Zhong Shanshan',
+        net_worth:  69,
+        rank: 13,
+        age: 66,
+        country: "China",
+        source: 'beverages, pharmaceuticals',
+        industry: 'Food & Beverage',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F60380e390357bc1fbfc0bc32%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D116%26cropX2%3D1327%26cropY1%3D201%26cropY2%3D1413'
+    },
+
+    {
+        name: 'Steve Ballmer',
+        net_worth:  69,
+        rank: 14,
+        age: 65,
+        country: "United States",
+        source: 'Microsoft',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F59d50c47a7ea436b47b36d66%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D553%26cropX2%3D2940%26cropY1%3D322%26cropY2%3D2708'
+        
+    },
+
+    {
+        name: 'Ma Huateng',
+        net_worth:  66,
+        rank: 15,
+        age: 49,
+        country: "China",
+        source: 'Internet Media',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e23c0f0986f688fbd3e15%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080'
+    },
+
+    {
+        name: 'Carlos Slim Helu & family',
+        net_worth:  63,
+        rank: 16,
+        age: 81,
+        country: "Mexico",
+        source: 'Telecom',
+        industry: 'Telecom',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76ba144bbe6f24ad99c613%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D3005%26cropY1%3D389%26cropY2%3D3395'
+    },
+
+    {
+        name: 'Alice Walton',
+        net_worth:  62,
+        rank: 17,
+        age: 71,
+        country: "United States",
+        source: 'Walmart',
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7ef270a7ea434b351bca52%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D232%26cropX2%3D998%26cropY1%3D222%26cropY2%3D988'
+    },
+
+    {
+        name: 'Jim Walton',
+        net_worth:  61,
+        rank: 18,
+        age: 72,
+        country: "United States",
+        source: 'Walmart',
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7ef2fea7ea434b351bca5a%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D49%26cropX2%3D934%26cropY1%3D65%26cropY2%3D951'
+    },
+
+    {
+        name: 'Rob Walton',
+        net_worth:  60,
+        rank: 19,
+        age: 76,
+        country: "United States",
+        source: 'Walmart',
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F59d50a9e4bbe6f37dd9ff712%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D244%26cropX2%3D1841%26cropY1%3D60%26cropY2%3D1658'
+    },
+
+    {
+        name: 'Michael Bloomberg',
+        net_worth:  59,
+        rank: 20,
+        age: 79,
+        country: "United States",
+        source: 'Bloomberg LP',
+        industry: 'Media & Entertainment',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b4104bbe6f24ad99c35d%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D165%26cropX2%3D5613%26cropY1%3D321%26cropY2%3D5769'
+    },
+
+    {
+        name: 'Colin Zheng Huang',
+        net_worth:  54,
+        rank: 21,
+        age: 41,
+        country: "China",
+        source: 'E-commerce',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e75028b10380d0006bdc142%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D834%26cropX2%3D2330%26cropY1%3D160%26cropY2%3D1656'
+    },
+
+    {
+        name: 'MacKenzie Scott',
+        net_worth:  53,
+        rank: 22,
+        age: 50,
+        country: "United States",
+        source: 'Amazon',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e55e3d81fd508109d9140%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080'
+    },
+
+    {
+        name: 'Daniel Gilbert',
+        net_worth:  52,
+        rank: 23,
+        age: 59,
+        country: "United States",
+        source: 'Quicken Loans',
+        industry: 'Finance & Investments',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e444fcb112160000621ed4c%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D2000%26cropY1%3D307%26cropY2%3D2307'
+    },
+
+    {
+        name: 'Gautam Adani & family',
+        net_worth:  51,
+        rank: 24,
+        age: 58,
+        country: "India",
+        source: 'infrastructure, commodities',
+        industry: 'Diversified',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F59cd4d61a7ea434a34f47b11%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D891%26cropX2%3D4131%26cropY1%3D69%26cropY2%3D3309'
+    },
+
+    {
+        name: 'Phil Knight & family',
+        net_worth:  50,
+        rank: 25,
+        age: 83,
+        country: "United States",
+        source: 'Nike',
+        industry: 'Fashion & Retail',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5a8d930431358e4955adf1bb%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D1457%26cropX2%3D2405%26cropY1%3D17%26cropY2%3D966'
+    },
+
+    {
+        name: 'Jack Ma',
+        net_worth:  49,
+        rank: 26,
+        age: 56,
+        country: "China",
+        source: 'E-Commerce',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e22fe6df966b3fcbd3e15%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080'
+    },
+
+    {
+        name: 'Charles Koch',
+        net_worth:  47,
+        rank: 27,
+        age: 85,
+        country: "United States",
+        source: 'Koch Industries',
+        industry: 'Diversified',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5638b4b5e4b0ffa7afe69a7f%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D11%26cropX2%3D726%26cropY1%3D60%26cropY2%3D775'
+    },
+
+    {
+        name: 'Julia Koch & family',
+        net_worth:  47,
+        rank: 28,
+        age: 58,
+        country: "United States",
+        source: 'Koch Industries',
+        industry: 'Diversified',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e7bbaaa10380d0006fc154e%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D5196%26cropY1%3D0%26cropY2%3D5196'
+    },
+
+    {
+        name: 'Masayoshi Son',
+        net_worth:  46,
+        rank: 29,
+        age: 63,
+        country: "Japan",
+        source: 'internet, telecom',
+        industry: 'Telecom',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e8b632801879f000703e485%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4500%26cropY1%3D833%26cropY2%3D5330'
+    },
+
+    {
+        name: 'Michael Dell',
+        net_worth:  46,
+        rank: 30,
+        age: 56,
+        country: "United States",
+        source: 'Dell computers',
+        industry: 'Technology',
+        img: 'https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5efa0fd18e7e930007731112%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D1034%26cropX2%3D3701%26cropY1%3D0%26cropY2%3D2667'
+    },
+]
+
+[{ "name": "Jeff Bezos", "net_worth": 177, "rank": 1, "age": 57, "country": "United States", "source": "Amazon", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5bb22ae84bbe6f67d2e82e05%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D627%26cropX2%3D1639%26cropY1%3D129%26cropY2%3D1142" }, { "name": "Elon Musk", "net_worth": 151, "rank": 2, "age": 49, "country": "United States", "source": "Tesla, SpaceX", "industry": "Automotive", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f47d4de7637290765bce495%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D1699%26cropX2%3D3845%26cropY1%3D559%26cropY2%3D2704" }, { "name": "Bernard Arnault & family", "net_worth": 150, "rank": 3, "age": 72, "country": "France", "source": "LVMH", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5dc05518ca425400079c659f%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4000%26cropY1%3D1209%26cropY2%3D5212" }, { "name": "Bill Gates", "net_worth": 124, "rank": 4, "age": 65, "country": "United States", "source": "Microsoft", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4ebe0c87612dab4f12a597%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D292%26cropX2%3D3684%26cropY1%3D592%26cropY2%3D3987" }, { "name": "Mark Zuckerberg", "net_worth": 97, "rank": 5, "age": 36, "country": "United States", "source": "Facebook", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b7d331358e35dd2773a9%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4401%26cropY1%3D0%26cropY2%3D4401" }, { "name": "Warren Buffett", "net_worth": 96, "rank": 6, "age": 90, "country": "United States", "source": "Berkshire Hathaway", "industry": "Finance & Investments", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5babb7f1a7ea4342a948b79a%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D748%26cropX2%3D3075%26cropY1%3D1753%26cropY2%3D4082" }, { "name": "Larry Ellison", "net_worth": 93, "rank": 7, "age": 76, "country": "United States", "source": "Software", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e8b62cfc095010007bffea0%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4529%26cropY1%3D652%26cropY2%3D5184" }, { "name": "Larry Page", "net_worth": 92, "rank": 8, "age": 48, "country": "United States", "source": "Google", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76bcaaa7ea43100043c836%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D227%26cropX2%3D2022%26cropY1%3D22%26cropY2%3D1817" }, { "name": "Sergey Brin", "net_worth": 89, "rank": 9, "age": 47, "country": "United States", "source": "Google", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7c254bbe6f78090d831f%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D475%26cropX2%3D2887%26cropY1%3D168%26cropY2%3D2582" }, { "name": "Mukesh Ambani", "net_worth": 85, "rank": 10, "age": 63, "country": "India", "source": "Diversified", "industry": "Diversified", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7829a7ea434b351ba0b6%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D206%26cropX2%3D2043%26cropY1%3D250%26cropY2%3D2089" }, { "name": "Amancio Ortega", "net_worth": 77, "rank": 11, "age": 85, "country": "Spain", "source": "Zara", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b94131358e35dd27748e%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D179%26cropX2%3D2232%26cropY1%3D216%26cropY2%3D2269" }, { "name": "Francoise Bettencourt Meyers & family", "net_worth": 74, "rank": 12, "age": 67, "country": "France", "source": "L'Oreal", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e26e3c65f7c2596bd3e15%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080" }, { "name": "Zhong Shanshan", "net_worth": 69, "rank": 13, "age": 66, "country": "China", "source": "beverages, pharmaceuticals", "industry": "Food & Beverage", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F60380e390357bc1fbfc0bc32%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D116%26cropX2%3D1327%26cropY1%3D201%26cropY2%3D1413" }, { "name": "Steve Ballmer", "net_worth": 69, "rank": 14, "age": 65, "country": "United States", "source": "Microsoft", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F59d50c47a7ea436b47b36d66%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D553%26cropX2%3D2940%26cropY1%3D322%26cropY2%3D2708" }, { "name": "Ma Huateng", "net_worth": 66, "rank": 15, "age": 49, "country": "China", "source": "Internet Media", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e23c0f0986f688fbd3e15%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080" }, { "name": "Carlos Slim Helu & family", "net_worth": 63, "rank": 16, "age": 81, "country": "Mexico", "source": "Telecom", "industry": "Telecom", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76ba144bbe6f24ad99c613%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D3005%26cropY1%3D389%26cropY2%3D3395" }, { "name": "Alice Walton", "net_worth": 62, "rank": 17, "age": 71, "country": "United States", "source": "Walmart", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7ef270a7ea434b351bca52%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D232%26cropX2%3D998%26cropY1%3D222%26cropY2%3D988" }, { "name": "Jim Walton", "net_worth": 61, "rank": 18, "age": 72, "country": "United States", "source": "Walmart", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7ef2fea7ea434b351bca5a%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D49%26cropX2%3D934%26cropY1%3D65%26cropY2%3D951" }, { "name": "Rob Walton", "net_worth": 60, "rank": 19, "age": 76, "country": "United States", "source": "Walmart", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F59d50a9e4bbe6f37dd9ff712%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D244%26cropX2%3D1841%26cropY1%3D60%26cropY2%3D1658" }, { "name": "Michael Bloomberg", "net_worth": 59, "rank": 20, "age": 79, "country": "United States", "source": "Bloomberg LP", "industry": "Media & Entertainment", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b4104bbe6f24ad99c35d%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D165%26cropX2%3D5613%26cropY1%3D321%26cropY2%3D5769" }, { "name": "Colin Zheng Huang", "net_worth": 54, "rank": 21, "age": 41, "country": "China", "source": "E-commerce", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e75028b10380d0006bdc142%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D834%26cropX2%3D2330%26cropY1%3D160%26cropY2%3D1656" }, { "name": "MacKenzie Scott", "net_worth": 53, "rank": 22, "age": 50, "country": "United States", "source": "Amazon", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e55e3d81fd508109d9140%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080" }, { "name": "Daniel Gilbert", "net_worth": 52, "rank": 23, "age": 59, "country": "United States", "source": "Quicken Loans", "industry": "Finance & Investments", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e444fcb112160000621ed4c%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D2000%26cropY1%3D307%26cropY2%3D2307" }, { "name": "Gautam Adani & family", "net_worth": 51, "rank": 24, "age": 58, "country": "India", "source": "infrastructure, commodities", "industry": "Diversified", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F59cd4d61a7ea434a34f47b11%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D891%26cropX2%3D4131%26cropY1%3D69%26cropY2%3D3309" }, { "name": "Phil Knight & family", "net_worth": 50, "rank": 25, "age": 83, "country": "United States", "source": "Nike", "industry": "Fashion & Retail", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5a8d930431358e4955adf1bb%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D1457%26cropX2%3D2405%26cropY1%3D17%26cropY2%3D966" }, { "name": "Jack Ma", "net_worth": 49, "rank": 26, "age": 56, "country": "China", "source": "E-Commerce", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605e22fe6df966b3fcbd3e15%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D1080%26cropY1%3D0%26cropY2%3D1080" }, { "name": "Charles Koch", "net_worth": 47, "rank": 27, "age": 85, "country": "United States", "source": "Koch Industries", "industry": "Diversified", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5638b4b5e4b0ffa7afe69a7f%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D11%26cropX2%3D726%26cropY1%3D60%26cropY2%3D775" }, { "name": "Julia Koch & family", "net_worth": 47, "rank": 28, "age": 58, "country": "United States", "source": "Koch Industries", "industry": "Diversified", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e7bbaaa10380d0006fc154e%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D5196%26cropY1%3D0%26cropY2%3D5196" }, { "name": "Masayoshi Son", "net_worth": 46, "rank": 29, "age": 63, "country": "Japan", "source": "internet, telecom", "industry": "Telecom", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e8b632801879f000703e485%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4500%26cropY1%3D833%26cropY2%3D5330" }, { "name": "Michael Dell", "net_worth": 46, "rank": 30, "age": 56, "country": "United States", "source": "Dell computers", "industry": "Technology", "img": "https://thumbor.forbes.com/thumbor/190x190/smart/filters:format(jpeg)/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5efa0fd18e7e930007731112%2F416x416.jpg%3Fbackground%3D000000%26cropX1%3D1034%26cropX2%3D3701%26cropY1%3D0%26cropY2%3D2667" }]

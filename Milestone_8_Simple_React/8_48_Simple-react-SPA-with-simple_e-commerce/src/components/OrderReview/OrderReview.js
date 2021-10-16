@@ -24,10 +24,10 @@ const OrderReview = () => {
 
     const history = useHistory();
 
-    const handlePlaceOrder = () => {
-        history.push('/placeorder');
-        setCart([]);
-        clearTheCart();
+    const handleProceedToShipping = () => {
+        // setCart([]);
+        // clearTheCart();
+        history.push('/shipping');
     }
 
     return (
@@ -49,7 +49,7 @@ const OrderReview = () => {
                     </Link> */}
 
                     {/* By event handler */}
-                    <button onClick = {handlePlaceOrder} className='btn-regular'>Place Order</button>
+                    <button onClick = {handleProceedToShipping} className='btn-regular'>Proceed to  Shipping</button>
                 </Cart>
             </div>
             

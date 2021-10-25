@@ -15,3 +15,6 @@
         const newUsers = [...users, addedUser];
         setUsers(newUsers);
       });
+
+
+### // Load data from backend by using 'AXIOS'

@@ -1,7 +1,7 @@
 # Step 1
-npm init -y
-npm install express --save
-npm install -g nodemon
+1. npm init -y
+2. npm install express --save
+3. npm install -g nodemon
 
 # Step 2
 ** Now add this line inner of script at package.json file:

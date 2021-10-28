@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Replace Tyre",
+        "price": 700,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Z2b5jL5/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Refill Engine",
+        "price": 1000,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/mq7Mtw0/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Engine Diagnostic",
+        "price": 5000,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/LNW6cbv/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Body Repair",
+        "price": 3000,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/wYcCg6p/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Engine Repair",
+        "price": 2000,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/9bTsx7D/5.jpg"
+    }
+]
